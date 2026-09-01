@@ -4,7 +4,7 @@ resources:
   pipelines:
     bronze_silver_earthquake_etl:
       # name: Bronze_Silver_EarthQuake
-      name: Bronze_Silver_EarthQuake
+      name: Bronze_Silver_EarthQuake_Prod
       libraries:
         - glob:
             include: ../src/DLT_pipelines/Bronze_Silver_EarthQuake/transformations/**
