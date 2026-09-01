@@ -21,6 +21,8 @@ resources:
             subscription: {}
             warehouse_id: af144637b509aa5b
             dashboard_id: 01f1a44a90bf127982eb4c90fe0a2ac5
+      run_as:
+         service_principal_name: ${var.spn_id}
       queue:
         enabled: true
       parameters:

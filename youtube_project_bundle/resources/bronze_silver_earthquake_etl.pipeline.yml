@@ -16,6 +16,8 @@ resources:
       # catalog: youtube_dev
       catalog: ${var.catalog}
       serverless: true
+      run_as:
+         service_principal_name: ${var.spn_id}
 
 
 

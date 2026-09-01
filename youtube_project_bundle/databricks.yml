@@ -13,6 +13,9 @@ variables:
     description: The catalog to use
   schema:
     description: The schema to use
+  spn_id:
+    description: spn id
+
 
 targets:
   dev:
@@ -27,6 +30,8 @@ targets:
     variables:
       catalog: youtube_dev
       schema: dev
+    spn_id: 6e7e5174-30aa-4287-9cf5-11a0efff17be
+        
     presets:
       artifacts_dynamic_version: true
   prod:
@@ -39,6 +44,10 @@ targets:
     variables:
       catalog: youtube_dev
       schema: prod
+    spn_id: 6e7e5174-30aa-4287-9cf5-11a0efff17be
+
     permissions:
       - user_name: quarnew69@gmail.com
+        level: CAN_MANAGE
+      - group_name: earthquake_prod_writer
         level: CAN_MANAGE

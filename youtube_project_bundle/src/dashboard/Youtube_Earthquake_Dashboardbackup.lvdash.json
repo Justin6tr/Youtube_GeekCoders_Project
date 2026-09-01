@@ -4,10 +4,10 @@
       "name": "b5b6f492",
       "displayName": "EarthQuake_Detail",
       "queryLines": [
-        "select * from youtube_prod.silver.earthquake_data_final;\r\n",
+        "select * from youtube_dev.silver.earthquake_data_final;\r\n",
         "\r\n"
       ],
-      "catalog": "youtube_prod",
+      "catalog": "youtube_dev",
       "schema": "default"
     },
     {
@@ -26,7 +26,7 @@
         "from silver.earthquake_data_final)\r\n",
         "group by country;\r\n"
       ],
-      "catalog": "youtube_prod",
+      "catalog": "youtube_dev",
       "schema": "default"
     },
     {
@@ -47,14 +47,14 @@
         "    ELSE 'Moderate+ (4+)'\r\n",
         "  END as magnitude_bucket\r\n",
         "FROM\r\n",
-        "  youtube_prod.silver.earthquake_data_final\r\n",
+        "  youtube_dev.silver.earthquake_data_final\r\n",
         "   )\r\n",
         "GROUP BY\r\n",
         "  magnitude_bucket;\r\n",
         "\r\n",
         "\r\n"
       ],
-      "catalog": "youtube_prod",
+      "catalog": "youtube_dev",
       "schema": "default"
     }
   ],
